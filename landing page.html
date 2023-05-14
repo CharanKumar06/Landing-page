@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Milkshakers Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle "></div>
+        <header>
+            <a href="#" ><img src="images/attachment_71768048.jpeg" class="logo"></a> 
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just a shake<br><span> Milkshakers</span></h2>
+                <p>Un asunto calorífico que vale la pena ser apreciado</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgbox">
+              <img src="images/attachment_71768048.jpeg" class="Milkshakers">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="images/vanilla-milkshake-photo.jpg" onclick="imgSlider('images/vanilla-milkshake-photo.jpg');changeCircleColor('#deeppink')"></li>
+            <li><img src="images/download.jpeg" onclick="imgSlider('images/download.jpeg');changeCircleColor('#eb7495')"></li>
+            <li><img src="images/download (1).jpeg" onclick="imgSlider('images/download (1).jpeg');changeCircleColor('#d752b1')"></li> 
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="images/facebook.png"></a></li>
+            <li><a href="#"><img src="images/twitter.png"></a></li>
+            <li><a href="#"><img src="images/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.milkshakers').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script> 
+</body>
+</html>            
+
+
+           
